@@ -9,7 +9,13 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/Assets
+/Assets/*.meta
+/Assets/Images
+/Assets/Modern Weapons Pack
+/Assets/Smoke
+/Assets/Sounds
+/Assets/Zombie
+/Assets/XR
 /ProjectSettings
 
 # MemoryCaptures can get excessive in size.
