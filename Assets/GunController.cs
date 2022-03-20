@@ -10,6 +10,7 @@ public class GunController : MonoBehaviour
     //    
     //}
     Animator m_animator;
+    public ShootScript shootScript;
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{
@@ -25,6 +26,7 @@ public class GunController : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             m_animator.SetTrigger("Shoot");
+            // shootScript.Shoot();
         }
     }
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

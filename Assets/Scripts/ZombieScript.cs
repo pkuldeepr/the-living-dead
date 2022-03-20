@@ -13,6 +13,7 @@ public class ZombieScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ///Moves the transform(Zombie) in the direction and distance of translation.
         transform.Translate(Vector3.forward*Time.deltaTime*0.4f);
     }
 }
