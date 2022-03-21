@@ -14,7 +14,8 @@ public class ShootScript : MonoBehaviour
         ///Physics Raycast Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
         if(Physics.Raycast(arCamera.transform.position,arCamera.transform.forward,out hit)){
             if(hit.transform.name == "Zombie1(Clone)" || hit.transform.name == "Zombie2(Clone)" || hit.transform.name == "Zombie3(Clone)"){
-                Destroy(hit.transform.gameObject);   
+                Destroy(hit.transform.gameObject);  
+                ///To increment score 
                 ScoreManager.instance.addScore();             
                 Instantiate(smoke,hit.point,Quaternion.LookRotation(hit.normal));
             }

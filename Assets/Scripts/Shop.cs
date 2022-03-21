@@ -30,6 +30,7 @@ public class Shop : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");    
     }
+    ///This function will toggle the icons(locked/unlocked) on the shop screen
     public void bought()
     {
         if(buy.GetComponent<Toggle>().isOn==true)
